@@ -1,0 +1,1 @@
+{"beta": 1.0, "num_tune": 1000000, "freq_tune": 10000, "num_prod": 10000000, "freq_print": 1000000}
