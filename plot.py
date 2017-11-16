@@ -1,5 +1,5 @@
 """
-Plot extrapolation after either running a Mayer sampling simulation, or
+Plot extrapolation after either running a Mayer-sampling simulation, or
 reading the final result of a simulation from a file.
 
 The mayer sampling simulations result in a table where the indicies are the
@@ -25,15 +25,15 @@ PARSER.add_argument('--series_filename', '-s', default="taylor_series.csv",
 PARSER.add_argument('--metadata_filename', '-m', default="metadata.json",
     type=str, help="json format file containing mayer sampling MC parameters")
 PARSER.add_argument('--simulate', action='store_true', default=False,
-    help="perform Mayer sampling Monte Carlo to generate taylor series")
+    help="perform Mayer-sampling Monte Carlo to generate taylor series")
 PARSER.add_argument('--series_type', default="pade", type=str,
     help="Pade approximate (pade) or Taylor series (taylor)")
 PARSER.add_argument('--beta0', '-b', default=1., type=float,
-    help="inverse temperature at which to perform Mayer sampling Monte Carlo")
+    help="inverse temperature at which to perform Mayer-sampling Monte Carlo")
 PARSER.add_argument('--num_tune', default=int(1e6), type=int,
                     help="number of trials to tune max move")
 PARSER.add_argument('--num_prod', default=int(1e7), type=int,
-                    help="number of total trials in Mayer sampling Monte Carlo")
+                    help="number of total trials in Mayer-sampling Monte Carlo")
 PARSER.add_argument('--freq_tune', default=int(1e4), type=int,
                     help="number of trials between each tune")
 PARSER.add_argument('--freq_print', default=int(1e6), type=int,
