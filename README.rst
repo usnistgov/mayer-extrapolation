@@ -5,12 +5,12 @@ README
 Use extrapolation of Mayer-sampling Monte Carlo to obtain virial coefficients
 over large ranges of parameter values.
 
-[HWH insert manuscript citation here.]
+The manuscript which describes this method is https://doi.org/10.1063/1.5016165
 
 Prerequisites
 #############
 
-This code uses Python 2 and 3 and tested with the libraries available in Anaconda version 4.3.1 (see `<DISCLAIMER.txt>`_). 
+This code uses Python 2 and 3 and tested with the libraries available in Anaconda version 4.3.1 (see `<DISCLAIMER.txt>`_).
 
 https://docs.anaconda.com/anaconda/install/
 
