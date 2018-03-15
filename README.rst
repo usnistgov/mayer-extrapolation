@@ -7,6 +7,12 @@ over large ranges of parameter values.
 
 The manuscript which describes this method is https://doi.org/10.1063/1.5016165
 
+Note that this example code is only for Lennard-Jones particles, but Mayer-sampling for more complicated molecules is also part of the Free Energy and Advanced Sampling Simulation Toolkit (FEASST):
+
+https://github.com/usnistgov/feasst
+https://doi.org/10.18434/M3S095
+https://doi.org/10.6028/jres.123.004
+
 Prerequisites
 #############
 
