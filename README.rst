@@ -18,7 +18,7 @@ https://doi.org/10.6028/jres.123.004
 Prerequisites
 #############
 
-This code uses Python 2 and 3 and tested with the libraries available in Anaconda version 4.3.1 (see `<DISCLAIMER.txt>`_).
+This code uses Python 2 and 3 and tested with the libraries available in Anaconda version 4.3.1 (see `<DISCLAIMER.rst>`_).
 
 https://docs.anaconda.com/anaconda/install/
 
@@ -69,3 +69,8 @@ To see options available at command line:
                             number of trials between each tune
       --freq_print FREQ_PRINT
                             number of trials before printing status
+
+.. include:: DISCLAIMER.rst
+
+.. include:: LICENSE.rst
+
