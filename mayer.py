@@ -47,7 +47,7 @@ def second_virial_coefficient(beta=1., num_tune=int(1e6), freq_tune=int(1e4), nu
     pe_old = ulj(origin_sq_distance(pos_vec))
     beta = metadata["beta"]
     f12old = math.exp(-beta*pe_old) - 1
-    f12ref = math.exp(-beta*uhs(origin_sq_distance(pos_vec)) - 1)
+    f12ref = math.exp(-beta*uhs(origin_sq_distance(pos_vec))) - 1
     max_disp = 0.1        # maximum 1D distance of displacement
     num_disp_accept = 0   # number of accepted displacements
     num_disp_attempt = 0  # number of attempted displacements
