@@ -15,7 +15,7 @@ import json
 import matplotlib.pyplot as plt
 import matplotlib.colors as colors
 import matplotlib.cm as cmx
-from scipy import misc
+from scipy.interpolate import pade
 import numpy as np
 import pandas as pd
 
@@ -68,7 +68,7 @@ def series_evaluate(series, deta, order=1, series_type="taylor"):
     assert order <= series_to_num_order(series)
     coeffs = series["b2"].values[:(order+1)]
     if series_type == "pade" or series_type == "q" or series_type == "p":
-        p_pade, q_pade = misc.pade(coeffs, 1)
+        p_pade, q_pade = pade(coeffs, 1)
         if series_type == "pade":
             return p_pade(deta)/q_pade(deta)
         if series_type == "q":
